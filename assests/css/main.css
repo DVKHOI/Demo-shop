@@ -9,6 +9,7 @@
 .header__navbar-list{
     list-style: none;
     padding-left: 0;
+    margin-top: 4px;
     
 }
 .header__navbar-item{
@@ -22,6 +23,28 @@
     color: var(--while-color);
     text-decoration: none;
     font-weight: 300;
+    min-height: 26px;
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link{
+    display: inline-flex;
+    align-items: center;
+    margin-top: -4px;
+}
+
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover,
+.header__navbar-icon-link:hover{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.header__navbar-item--no-pointer{
+    cursor: text;
+    color: var(--while-color);
 }
 .header__navbar-item--strong{
     font-weight: 400;
@@ -36,4 +59,14 @@
     top: 50%;
     right: -9px;
     transform: translateY(-50%);
+}
+
+.header__navbar-icon-link{
+    color: var(--while-color);
+    text-decoration: none;
+}
+
+.header__navbar-icon{
+    font-size: 1.8rem;
+    margin: 0 4px;
 }
